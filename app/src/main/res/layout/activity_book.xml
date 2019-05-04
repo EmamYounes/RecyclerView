@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.smartec.recyclerview.view.BookActivity">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/search_ed"
+                android:hint="Search"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/search_tv"
+                android:textSize="20dp"
+                android:hint="Search Result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="125dp"
+                android:layout_height="170dp"
+                android:background="#352f2f"
+                android:id="@+id/book_image_id2"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_title_id2"
+                android:textColor="#697065"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="Book Title"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_category_id2"
+                android:textColor="#697065"
+                android:textSize="16sp"
+                android:background="#eae9e9"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="category"
+                />
+
+            <ExpandableListView
+                android:layout_marginTop="10dp"
+                android:id="@+id/lvExp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/data_list"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+</LinearLayout>
